@@ -1,12 +1,17 @@
+import { SHOW_ADVERTISEMENTS } from '../actions/getAdvertisements'
+
 const initialState = {
   payload:{}
 }
 
-const reducer = (state = [], action = {}) => {
+export default (state = initialState, action = {}) => {
   switch (action.type) {
+    case SHOW_ADVERTISEMENTS:
+      return{
+        ...state,
+        payload: action.payload
+      }
   default:
     return state
   }
 }
-
-export default reducer

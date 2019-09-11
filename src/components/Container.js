@@ -1,20 +1,24 @@
 import React from 'react'
-import { connect } from 'react-redux';
-
+import List from './List'
+import { getAdvertisements } from '../actions/getAdvertisements'
+import { connect } from 'react-redux'
 
 class Container extends React.Component {
 
   componentDidMount(){
-    
+    this.props.getAdvertisements()  
   }
 
   render(){
-    return 
-     
-    
-    }
+    if(!this.props.advertisements) return 'Loading plants...'
+    return <List advertisements={this.props.advertisements} />  
+  }
 }
 
-
-
-export default connect(null, null)()
+const mapStateToProps = (state) => {
+  return {
+    advertisements: state.advertisements
+  }
+}
+console.log(mapStateToProps)
+export default connect(mapStateToProps, {getAdvertisements})(Container)
