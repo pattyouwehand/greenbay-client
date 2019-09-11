@@ -1,3 +1,5 @@
+{/* font-family: 'Karma', serif; */}
+
 .App {
   text-align: center;
 }
@@ -5,7 +7,8 @@
 .App-header {
   background-image: url(./img/itrees-palms-03.jpg);
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,11 +21,38 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-title{
+  color: #1FBD04;
+  text-shadow: 1px 1px black;
+  font-size: 200px;
+  margin: auto;
+}
+
+.App-link {
+  color: zwart;
+}
+
+nav{
+  background-color: black;
+  width: 100%;
+}
+
+ul, li{
+  list-style: none;
+  color: #1FBD04;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+h1{
+  font-size: 40px;
+  color: black;
+  font-family: 'Karma', serif;
+}
+
+p{
+  font-size: 20px;
+  color: black;
+  font-family: 'Karma', serif;
 }

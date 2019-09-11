@@ -10,7 +10,7 @@ export default class Homepage extends React.Component {
     return (
         <div className="Homepage">
           <header className="App-header">
-            <h1 className="App-title">GREEN-BAY</h1>   
+            <h1 className="App-title">GREEN BAY</h1>   
             <Navbar />
           </header>
           <main>

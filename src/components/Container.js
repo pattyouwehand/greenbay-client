@@ -17,7 +17,7 @@ class Container extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    advertisements: state.advertisements
+    advertisements: state.advertisement.payload.advertisements
   }
 }
 console.log(mapStateToProps)

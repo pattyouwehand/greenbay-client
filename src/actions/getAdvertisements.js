@@ -12,7 +12,7 @@ export function showAdvertisements(advertisements){
 
 export function getAdvertisements(){
   return function(dispatch){
-    request('')
+    request('http://localhost:4000/advertisement')
     .then(res => {
       console.log('RESPONSE:', res)
       const advertisements = res.body
